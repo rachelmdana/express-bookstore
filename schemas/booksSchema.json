@@ -1,0 +1,101 @@
+{
+    "definitions": {},
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Root Schema",
+    "required": [
+        "book"
+    ],
+    "properties": {
+        "book": {
+            "type": "object",
+            "default": {},
+            "title": "The book Schema",
+            "required": [
+                "isbn",
+                "amazon_url",
+                "author",
+                "language",
+                "pages",
+                "publisher",
+                "title",
+                "year"
+            ],
+            "properties": {
+                "isbn": {
+                    "$id": "#/properties/book/properties/isbn",
+                    "type": "string",
+                    "default": "",
+                    "title": "The isbn Schema",
+                    "examples": [
+                        "1523510099"
+                    ]
+                },
+                "amazon_url": {
+                    "$id": "#/properties/book/properties/amazon-url",
+                    "type": "string",
+                    "default": "",
+                    "title": "The amazon_url Schema",
+                    "examples": [
+                        "https://www.amazon.com/Wine-Bible-3rd-Karen-MacNeil/dp/1523510099/ref=rtpb_d_sccl_2/145-7380146-2086652?pd_rd_w=aV0kt\u0026content-id=amzn1.sym.ab907333-063a-4de1-b403-0a312c047f32\u0026pf_rd_p=ab907333-063a-4de1-b403-0a312c047f32\u0026pf_rd_r=9EE95V06SJ7Z47CB92DW\u0026pd_rd_wg=EifR5\u0026pd_rd_r=d29d36f8-3870-41e8-adbb-4128289d4976\u0026pd_rd_i=1523510099\u0026psc=1"
+                    ]
+                },
+                "author": {
+                    "$id": "#/properties/book/properties/author",
+                    "type": "string",
+                    "default": "",
+                    "title": "The author Schema",
+                    "examples": [
+                        "Karen MacNeil"
+                    ]
+                },
+                "language": {
+                    "$id": "#/properties/book/properties/language",
+                    "type": "string",
+                    "default": "",
+                    "title": "The language Schema",
+                    "examples": [
+                        "english"
+                    ]
+                },
+                "pages": {
+                    "$id": "#/properties/book/properties/pages",
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The pages Schema",
+                    "examples": [
+                        736
+                    ]
+                },
+                "publisher": {
+                    "$id": "#/properties/book/properties/publisher",
+                    "type": "string",
+                    "default": "",
+                    "title": "The publisher Schema",
+                    "examples": [
+                        "Workman Publishing Company"
+                    ]
+                },
+                "title": {
+                    "$id": "#/properties/book/properties/title",
+                    "type": "string",
+                    "default": "",
+                    "title": "The title Schema",
+                    "examples": [
+                        "The Wine Bible, 3rd Edition"
+                    ]
+                },
+                "year": {
+                    "$id": "#/properties/book/properties/year",
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The year Schema",
+                    "examples": [
+                        2022
+                    ]
+                }
+            }
+        }
+    }
+}
